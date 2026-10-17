@@ -67,3 +67,19 @@ The following screenshots document selected investigations performed in the lab.
 
 - [Event Investigations](documentation/event-investigations.md)
 - [Audit Policy Configuration](documentation/audit-policy.md)
+
+## Key Takeaways
+
+Through this lab, I practiced:
+
+- Configuring and verifying Windows Advanced Audit Policy settings.
+- Using Event Viewer to filter and inspect Windows Security events.
+- Investigating failed authentication attempts and interpreting logon types.
+- Enabling process-creation auditing and validating it with Event ID 4688.
+- Correlating Active Directory group-membership events with controlled administrative changes.
+- Distinguishing confirmed evidence from assumptions when investigating security events.
+- Documenting investigation steps, findings, and limitations for technical review.
+
+### Next Steps
+
+Potential future enhancements include PowerShell-based log analysis, Sysmon process telemetry, Microsoft Defender investigation workflows, and centralized log analysis with a SIEM platform.
