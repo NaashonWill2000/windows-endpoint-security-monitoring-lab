@@ -51,3 +51,19 @@ This is an ongoing, isolated hands-on lab. Additional investigations, screenshot
 
 ## Disclaimer
 All testing was performed in a controlled virtual lab for educational and professional development purposes. This project demonstrates foundational Windows security monitoring and event investigation; it is not a production SOC or SIEM deployment.
+
+## Evidence Screenshots
+
+The following screenshots document selected investigations performed in the lab.
+
+| Event ID | Investigation | Evidence |
+|---|---|---|
+| 4625 | Failed logon investigation | [View screenshot](screenshots/event-4625-failed-logon.png) |
+| 4688 | Process creation monitoring | [View screenshot](screenshots/event-4688-process-creation.png) |
+| 4728 | Active Directory group addition | [View screenshot](screenshots/event-4728-ad-group-addition.png) |
+| 4729 | Active Directory group removal | [View screenshot](screenshots/event-4729-ad-group-removal.png) |
+
+## Documentation
+
+- [Event Investigations](documentation/event-investigations.md)
+- [Audit Policy Configuration](documentation/audit-policy.md)
