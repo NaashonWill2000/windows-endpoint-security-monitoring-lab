@@ -63,10 +63,17 @@ The following screenshots document selected investigations performed in the lab.
 | 4728 | Active Directory group addition | [View screenshot](screenshots/event-4728-ad-group-addition.png) |
 | 4729 | Active Directory group removal | [View screenshot](screenshots/event-4729-ad-group-removal.png) |
 
+### Sysmon Evidence
+
+- [Sysmon Event ID 1 — Process Creation](screenshots/sysmon-event-1-process-creation.png)
+- [Sysmon Event ID 3 — Network Connection](screenshots/sysmon-event-3-network-connection.png)
+- [Windows Security Event ID 4688 — Notepad Process Creation](screenshots/windows-security-event-4688-notepad.png)
+
 ## Documentation
 
 - [Event Investigations](documentation/event-investigations.md)
 - [Audit Policy Configuration](documentation/audit-policy.md)
+- [Sysmon Process and Network Monitoring Investigation](documentation/sysmon-investigation.md)
 
 ## Key Takeaways
 
