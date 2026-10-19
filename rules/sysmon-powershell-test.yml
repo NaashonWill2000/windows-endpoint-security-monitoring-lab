@@ -6,6 +6,7 @@ description: Detects a harmless PowerShell test command containing the SysmonDet
 logsource:
     product: windows
     category: process_creation
+    service: sysmon
 detection:
     selection:
         EventID: 1
