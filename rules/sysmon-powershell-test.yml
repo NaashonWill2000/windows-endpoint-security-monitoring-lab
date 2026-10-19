@@ -1,0 +1,17 @@
+
+title: Sysmon PowerShell Test Marker
+id: 7d93b04e-2a61-4c75-9f12-8c6e3a5b1042
+status: experimental
+description: Detects a harmless PowerShell test command containing the SysmonDetectionTest marker.
+logsource:
+    product: windows
+    category: process_creation
+detection:
+    selection:
+        EventID: 1
+        CommandLine|contains: 'SysmonDetectionTest'
+    condition: selection
+falsepositives:
+    - Authorized lab testing using the same marker
+level: informational
+
