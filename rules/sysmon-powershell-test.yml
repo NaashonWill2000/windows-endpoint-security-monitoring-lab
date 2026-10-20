@@ -4,9 +4,7 @@ id: 7d93b04e-2a61-4c75-9f12-8c6e3a5b1042
 status: experimental
 description: Detects a harmless PowerShell test command containing the SysmonDetectionTest marker.
 logsource:
-    product: windows
     category: process_creation
-    service: sysmon
 detection:
     selection:
         EventID: 1
