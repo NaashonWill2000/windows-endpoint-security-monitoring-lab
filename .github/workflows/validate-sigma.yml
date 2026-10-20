@@ -1,0 +1,23 @@
+
+name: Validate Sigma Rules
+
+on:
+  push:
+    paths:
+      - 'rules/**'
+      - '.github/workflows/validate-sigma.yml'
+  pull_request:
+    paths:
+      - 'rules/**'
+      - '.github/workflows/validate-sigma.yml'
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Validate Sigma rules
+        uses: SigmaHQ/sigma-rules-validator@v1
+        with:
+          paths: ./rules
+          schemaURL: https://raw.githubusercontent.com/SigmaHQ/sigma-specification/refs/heads/main/json-schema/sigma-detection-rule-schema.json
