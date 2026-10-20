@@ -40,6 +40,29 @@ This confirms that the event provides the expected input for the detection condi
 - The marker is a test string, not an indicator of malicious activity.
 - No SIEM integration, automated alerting, or production environment was tested.
 
+## Automated Sigma Schema Validation
+
+A GitHub Actions workflow was added at `.github/workflows/validate-sigma.yml` to validate the Sigma rule files in the `rules/` directory.
+
+**Observed result:** The workflow completed successfully and reported:
+
+`Validating Sigma rules against sigma-schema.json`
+
+`ok -- validation done`
+
+Evidence: [Successful Sigma Rule Validation](../screenshots/sigma-rule-validation-passed.png)
+
+This confirms that the validator completed its schema-validation process successfully. It does not establish that the rule has been tested against a live detection engine or that it generates alerts.
+
+## Portfolio Skills Demonstrated
+- Windows Sysmon process-creation telemetry
+- Command-line detection logic
+- Sigma-style rule authoring
+- YAML-based configuration
+- GitHub Actions workflow setup
+- Evidence collection and technical documentation
+- Distinguishing schema validation from runtime detection testing
+
 ## Next Steps
 - Validate the rule with a Sigma-compatible tool or convert it to a query supported by a log-analysis platform.
 - Expand testing with additional controlled process-creation scenarios.
