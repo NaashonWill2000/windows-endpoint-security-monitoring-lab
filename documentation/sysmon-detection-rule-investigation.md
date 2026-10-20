@@ -66,3 +66,19 @@ This confirms that the validator completed its schema-validation process success
 ## Next Steps
 - Validate the rule with a Sigma-compatible tool or convert it to a query supported by a log-analysis platform.
 - Expand testing with additional controlled process-creation scenarios.
+
+### Local Detection Condition Testing
+
+**Test source:** Windows Sysmon Operational log  
+**Event ID:** 1 — Process Creation  
+**Test marker:** `SysmonDetectionTest`  
+**Event Record ID:** 3793  
+**Test result:** Passed
+
+The test retrieved a recorded Sysmon event by timestamp and evaluated the Sigma rule's two detection conditions against the event. The event ID matched, the command-line marker was present in the raw XML, and both conditions returned `True`.
+
+**Evidence:** `sysmon-local-detection-test.txt`
+
+**Scope and limitations:** This was a local PowerShell test of the detection conditions against a real Sysmon event. The Sigma rule passed CLI validation and was converted to Splunk SPL, but the generated query has not been executed in a live SIEM.
+
+**Next step:** Configure a SIEM or compatible detection-testing environment to evaluate the generated query against ingested Windows event data.
