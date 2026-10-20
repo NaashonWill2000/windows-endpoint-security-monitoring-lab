@@ -1,0 +1,13 @@
+# Local Detection Condition Test
+
+- Test date: October 20, 2026
+- Event source: Microsoft-Windows-Sysmon/Operational
+- Event ID: 1
+- Event Record ID: 3793
+- Test marker: SysmonDetectionTest
+- EventIDMatches: True
+- MarkerMatches: True
+- DetectionConditionsMatch: True
+
+Result: Both Sigma detection conditions matched the retrieved Sysmon event.
+Scope: Local PowerShell condition test. The rule was not executed in a live SIEM.
