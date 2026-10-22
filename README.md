@@ -52,6 +52,11 @@ This is an ongoing, isolated hands-on lab. Additional investigations, screenshot
 ## Disclaimer
 All testing was performed in a controlled virtual lab for educational and professional development purposes. This project demonstrates foundational Windows security monitoring and event investigation; it is not a production SOC or SIEM deployment.
 
+## Live SIEM Monitoring & Detection
+
+- [Live Sysmon Telemetry & Splunk Detection](documentation/splunk-live-sysmon-detection.md) — Documents live Sysmon event forwarding to Splunk Enterprise, XML field extraction, and validation of a process-creation detection search.
+- [Live Splunk Detection Evidence](screenshots/splunk-live-sysmon-detection.png) — Screenshot showing the detection search matching live Sysmon telemetry.
+
 ## Evidence Screenshots
 
 The following screenshots document selected investigations performed in the lab.
@@ -89,4 +94,4 @@ Through this lab, I practiced:
 
 ### Next Steps
 
-Potential future enhancements include PowerShell-based log analysis, Sysmon process telemetry, Microsoft Defender investigation workflows, and centralized log analysis with a SIEM platform.
+Potential future enhancements include automated alerting for suspicious process activity, additional PowerShell detection rules, Microsoft Defender investigation workflows, and expanded SIEM investigations using live Windows endpoint telemetry.
