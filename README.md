@@ -80,6 +80,14 @@ All testing was performed in a controlled virtual lab for educational and profes
 - [Detection Documentation](documentation/powershell-multi-indicator-detection.md)
 - [Detection Evidence](screenshots/splunk-powershell-multi-indicator-detection.png)
 
+### PowerShell Multi-Indicator Detection Alert
+
+- Configured a scheduled Splunk Enterprise alert to evaluate Sysmon process-creation events every five minutes.
+- Set a 10-minute search window and a trigger condition of more than zero matching results.
+- Validated the alert using controlled PowerShell test activity and reviewed the matching event through the alert's View Results link.
+- [Alert Configuration Documentation](documentation/powershell-multi-indicator-alert.md)
+
+
 ## Evidence Screenshots
 
 The following screenshots document selected investigations performed in the lab.
