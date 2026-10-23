@@ -64,6 +64,14 @@ All testing was performed in a controlled virtual lab for educational and profes
 - [Detection Documentation](documentation/powershell-executionpolicy-detection.md)
 - [Detection Evidence](screenshots/splunk-powershell-executionpolicy-detection.png)
 
+### PowerShell Process Investigation
+
+- Investigated Sysmon process-creation events using Splunk SPL.
+- Extracted user, executable, command-line, and parent-process context to examine a PowerShell process relationship.
+- Assessed the observed activity against the controlled lab test and documented investigation limitations.
+- [Investigation Documentation](documentation/powershell-process-investigation.md)
+- [Investigation Evidence](screenshots/splunk-powershell-process-investigation.png)
+
 ## Evidence Screenshots
 
 The following screenshots document selected investigations performed in the lab.
