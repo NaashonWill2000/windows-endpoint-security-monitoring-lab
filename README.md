@@ -72,6 +72,14 @@ All testing was performed in a controlled virtual lab for educational and profes
 - [Investigation Documentation](documentation/powershell-process-investigation.md)
 - [Investigation Evidence](screenshots/splunk-powershell-process-investigation.png)
 
+### PowerShell Multi-Indicator Detection
+
+- Developed a Splunk SPL search to identify encoded-command, execution-policy bypass, and hidden-window arguments in Sysmon process-creation events.
+- Classified matching events by indicator and included user, executable, command-line, and parent-process context.
+- Validated the search against controlled PowerShell test activity and saved it as a reusable Splunk report.
+- [Detection Documentation](documentation/powershell-multi-indicator-detection.md)
+- [Detection Evidence](screenshots/splunk-powershell-multi-indicator-detection.png)
+
 ## Evidence Screenshots
 
 The following screenshots document selected investigations performed in the lab.
