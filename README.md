@@ -57,6 +57,13 @@ All testing was performed in a controlled virtual lab for educational and profes
 - [Live Sysmon Telemetry & Splunk Detection](documentation/splunk-live-sysmon-detection.md) — Documents live Sysmon event forwarding to Splunk Enterprise, XML field extraction, and validation of a process-creation detection search.
 - [Live Splunk Detection Evidence](screenshots/splunk-live-sysmon-detection.png) — Screenshot showing the detection search matching live Sysmon telemetry.
 
+### PowerShell Execution Policy Bypass Detection
+
+- Developed a Splunk SPL search to identify PowerShell process-creation events containing execution-policy bypass and encoded-command arguments.
+- Validated the detection using a controlled PowerShell test command and live Sysmon telemetry.
+- [Detection Documentation](documentation/powershell-executionpolicy-detection.md)
+- [Detection Evidence](screenshots/splunk-powershell-executionpolicy-detection.png)
+
 ## Evidence Screenshots
 
 The following screenshots document selected investigations performed in the lab.
