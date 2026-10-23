@@ -86,6 +86,7 @@ All testing was performed in a controlled virtual lab for educational and profes
 - Set a 10-minute search window and a trigger condition of more than zero matching results.
 - Validated the alert using controlled PowerShell test activity and reviewed the matching event through the alert's View Results link.
 - [Alert Configuration Documentation](documentation/powershell-multi-indicator-alert.md)
+- [Alert Evidence Screenshot](screenshots/splunk-powershell-multi-indicator-alert.png)
 
 
 ## Evidence Screenshots
