@@ -34,6 +34,11 @@ Validated the alert search using controlled PowerShell test activity. The matchi
 
 The alert was enabled, and its trigger history contained an entry. The matching result was accessible through the alert's View Results link.
 
+- Generated a fresh, controlled PowerShell test using the unique marker `BlueTeamAlertValidation20261023`.
+- Confirmed that Sysmon recorded the process-creation event and Splunk indexed the event.
+- Verified that the new marker appeared in the results associated with a scheduled alert trigger.
+- [Scheduled Alert Validation Evidence](../screenshots/splunk-scheduled-alert-validation.png)
+
 ## Limitations
 
 The test validates detection of a command-line pattern, not a confirmed attack. These PowerShell arguments can occur in legitimate administrative activity and require investigation in context.
