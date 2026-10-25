@@ -88,7 +88,7 @@ All testing was performed in a controlled virtual lab for educational and profes
 - [Alert Configuration Documentation](documentation/powershell-multi-indicator-alert.md)
 - [Alert Evidence Screenshot](screenshots/splunk-powershell-multi-indicator-alert.png)
 - [Scheduled Alert Validation Evidence](screenshots/splunk-scheduled-alert-validation.png)
-
+- **Alert Triage Investigation:** [PowerShell Alert Triage Investigation](documentation/powershell-alert-triage.md)
 
 ## Evidence Screenshots
 
