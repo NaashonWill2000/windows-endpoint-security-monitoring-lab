@@ -89,6 +89,8 @@ All testing was performed in a controlled virtual lab for educational and profes
 - [Alert Evidence Screenshot](screenshots/splunk-powershell-multi-indicator-alert.png)
 - [Scheduled Alert Validation Evidence](screenshots/splunk-scheduled-alert-validation.png)
 - **Alert Triage Investigation:** [PowerShell Alert Triage Investigation](documentation/powershell-alert-triage.md)
+- [SOC Process Investigation and Escalation Analysis](documentation/soc-process-investigation-and-escalation.md)
+
 
 ## Evidence Screenshots
 
