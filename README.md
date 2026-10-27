@@ -91,6 +91,17 @@ All testing was performed in a controlled virtual lab for educational and profes
 - **Alert Triage Investigation:** [PowerShell Alert Triage Investigation](documentation/powershell-alert-triage.md)
 - [SOC Process Investigation and Escalation Analysis](documentation/soc-process-investigation-and-escalation.md)
 
+### Incident Correlation and Severity Assessment
+
+- Correlated Sysmon process-creation (Event ID 1) and network-connection (Event ID 3) events in Splunk Enterprise.
+- Investigated outbound connections to `150.171.22.17:443` and correlated them with Microsoft Edge Update process activity.
+- Validated the executable's Authenticode signature using PowerShell and calculated elapsed time between process creation and network connections.
+- Assessed the activity as likely benign, with a provisional Informational / Low severity, based on the available evidence and documented investigation limitations.
+- [Investigation Documentation](documentation/incident-correlation-and-severity-assessment.md)
+- [Network Connection Evidence](screenshots/splunk-incident-network-connections.png)
+- [Process Correlation Evidence](screenshots/splunk-edge-update-process-correlation.png)
+- [Digital Signature Validation Evidence](screenshots/edge-update-digital-signature-validation.png)
+- [Correlation Timing Evidence](screenshots/splunk-incident-correlation-timing.png)
 
 ## Evidence Screenshots
 
