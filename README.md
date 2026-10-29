@@ -103,6 +103,17 @@ All testing was performed in a controlled virtual lab for educational and profes
 - [Digital Signature Validation Evidence](screenshots/edge-update-digital-signature-validation.png)
 - [Correlation Timing Evidence](screenshots/splunk-incident-correlation-timing.png)
 
+### Windows Failed Logon Detection — Event ID 4625
+
+- Configured Windows Security event collection through Splunk Universal Forwarder and Splunk Enterprise.
+- Developed and saved a Splunk SPL search to identify failed logon events (Event ID 4625).
+- Extracted target usernames and substatus values from Windows event XML to investigate authentication failures.
+- Aggregated failed logons by account and substatus, including the most recent event timestamp.
+- Validated the detection using a controlled `runas` authentication attempt with an incorrect password.
+- Confirmed that the resulting Windows Security event was searchable in Splunk.
+- [Detection Evidence](screenshots/windows-failed-logon-detection.png)
+
+
 ## Evidence Screenshots
 
 The following screenshots document selected investigations performed in the lab.
