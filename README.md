@@ -133,6 +133,7 @@ The following screenshots document selected investigations performed in the lab.
 
 ## Documentation
 
+- [Incident Response Runbook](documentation/incident-response-runbook.md) — Documents the investigation workflow for failed logons, Sysmon process creation, PowerShell activity, event correlation, severity assessment, and escalation.
 - [Event Investigations](documentation/event-investigations.md)
 - [Audit Policy Configuration](documentation/audit-policy.md)
 - [Sysmon Process and Network Monitoring Investigation](documentation/sysmon-investigation.md)
