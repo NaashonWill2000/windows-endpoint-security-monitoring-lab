@@ -113,6 +113,41 @@ All testing was performed in a controlled virtual lab for educational and profes
 - Confirmed that the resulting Windows Security event was searchable in Splunk.
 - [Detection Evidence](screenshots/windows-failed-logon-detection.png)
 
+## Windows Security Operations Dashboard
+
+Developed a five-panel dashboard in Splunk Enterprise to provide centralized visibility into Windows endpoint security telemetry collected from WS01.
+
+### Dashboard Panels
+
+| Panel | Purpose | Data Source |
+|---|---|---|
+| Failed Logon Activity | Monitors unsuccessful authentication attempts | Windows Security Event ID 4625 |
+| PowerShell Detection Activity | Displays PowerShell execution activity and command-line details | Sysmon process telemetry |
+| Sysmon Process Creation Activity | Monitors process execution and parent-child relationships | Sysmon Event ID 1 |
+| Network Connection Activity | Displays endpoint network connections, destination IPs, and ports | Sysmon Event ID 3 |
+| Security Event Trend | Visualizes hourly Windows Security event volume | Windows Security Logs |
+
+### Dashboard Evidence
+
+**Dashboard Overview**
+
+![Windows Security Dashboard Overview](screenshots/windows-security-dashboard-overview.png)
+
+**Dashboard Lower Panels**
+
+![Windows Security Dashboard Lower Panels](screenshots/windows-security-dashboard-lower-panels.png)
+
+### Monitoring Capabilities
+
+- Authentication failure monitoring
+- PowerShell execution visibility
+- Process creation and parent-process analysis
+- Network connection monitoring
+- Time-based Windows Security event analysis
+
+**Platform:** Splunk Enterprise 10.6.1.1  
+**Endpoint:** Windows 11 (WS01)  
+**Telemetry:** Windows Security Logs and Sysmon
 
 ## Evidence Screenshots
 
@@ -150,6 +185,13 @@ Through this lab, I practiced:
 - Distinguishing confirmed evidence from assumptions when investigating security events.
 - Documenting investigation steps, findings, and limitations for technical review.
 
-### Next Steps
+## Next Steps
 
-Potential future enhancements include automated alerting for suspicious process activity, additional PowerShell detection rules, Microsoft Defender investigation workflows, and expanded SIEM investigations using live Windows endpoint telemetry.
+Potential future enhancements include:
+
+- Expanding detection coverage for additional Windows Security and Sysmon event types.
+- Developing additional alerting scenarios for suspicious authentication and account-management activity.
+- Improving dashboard filtering, visualization, and time-range controls.
+- Conducting additional controlled security investigations to validate detection accuracy.
+- Expanding incident response documentation with additional investigation scenarios.
+- Exploring Microsoft Defender security investigation workflows.
