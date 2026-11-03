@@ -103,6 +103,17 @@ All testing was performed in a controlled virtual lab for educational and profes
 - [Digital Signature Validation Evidence](screenshots/edge-update-digital-signature-validation.png)
 - [Correlation Timing Evidence](screenshots/splunk-incident-correlation-timing.png)
 
+### Account Compromise Investigation — End-to-End SOC Case Study
+
+- Conducted an end-to-end investigation of Windows authentication and endpoint activity associated with `SKYSHIELD\SOC-TestUser`.
+- Analyzed successful and failed authentication events using Windows Security Event IDs 4624 and 4625.
+- Investigated process execution and outbound network connections using Sysmon Event IDs 1 and 3.
+- Correlated process creation and network activity using the Sysmon Process GUID.
+- Validated the Microsoft digital signature of `backgroundTaskHost.exe` using PowerShell.
+- Examined destination hostname information and assessed the observed network activity.
+- Documented the investigation timeline, supporting evidence, analyst assessment, and recommended follow-up actions.
+- **[Account Compromise Investigation Report](documentation/account-compromise-investigation.md)**
+
 ### Windows Failed Logon Detection — Event ID 4625
 
 - Configured Windows Security event collection through Splunk Universal Forwarder and Splunk Enterprise.
