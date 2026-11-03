@@ -12,6 +12,17 @@ The goal is to understand how Windows records authentication activity, process c
 - **Virtualization:** Oracle VirtualBox
 - **Tools:** Windows Event Viewer, Windows Advanced Audit Policy, `auditpol`, Active Directory Users and Computers
 
+### Endpoint Naming Convention
+
+Within this project, **WS01** refers to the Windows 11 lab workstation by its designated lab identifier. Its actual Windows hostname is **DESKTOP-RRPR83H**.
+
+- **Lab Identifier:** WS01
+- **Windows Hostname:** `DESKTOP-RRPR83H`
+- **Operating System:** Windows 11
+- **Telemetry Host Field:** `DESKTOP-RRPR83H`
+
+References to WS01 throughout this documentation identify the same endpoint as `DESKTOP-RRPR83H` in Windows Event Viewer, Sysmon, and Splunk search results.
+
 ## Skills Demonstrated
 - Windows Security log analysis
 - Authentication success and failure investigation
