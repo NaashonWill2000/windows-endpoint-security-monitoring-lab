@@ -194,6 +194,8 @@ The following screenshots document selected investigations performed in the lab.
 - [Event Investigations](documentation/event-investigations.md)
 - [Audit Policy Configuration](documentation/audit-policy.md)
 - [Sysmon Process and Network Monitoring Investigation](documentation/sysmon-investigation.md)
+- [Active Directory Privilege Escalation Investigation](documentation/privilege-escalation-investigation.md) — Investigated privileged group membership changes, developed and tuned a scheduled Splunk alert using Event ID 4728, validated automated detection, and documented remediation.
+
 
 ## Key Takeaways
 
