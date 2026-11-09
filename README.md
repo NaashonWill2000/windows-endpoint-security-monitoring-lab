@@ -5,6 +5,31 @@ This project demonstrates hands-on Windows security monitoring and event investi
 
 The goal is to understand how Windows records authentication activity, process creation, account changes, and security-group membership changes, and how an analyst can use those events to investigate activity.
 
+## Featured SOC Investigations
+
+The following investigations demonstrate hands-on security monitoring, threat detection, incident analysis, and response within an isolated Windows Active Directory lab.
+
+### 1. Active Directory Privilege Escalation Investigation
+- Investigated Windows Security Event IDs 4720, 4728, and 4729.
+- Developed SPL detection logic to monitor Domain Admins membership changes.
+- Configured and tuned a scheduled high-severity Splunk alert.
+- Validated automated detection through a controlled privilege escalation simulation.
+- Documented investigation findings and remediation.
+
+**[View Privilege Escalation Investigation](documentation/privilege-escalation-investigation.md)**
+
+### 2. Account Compromise Investigation
+- Analyzed Windows authentication and security events.
+- Correlated security telemetry to investigate suspicious account activity.
+- Documented investigation findings and response procedures.
+
+**[View Account Compromise Investigation](documentation/account-compromise-investigation.md)**
+
+### 3. Windows Endpoint Threat Detection
+- Used Windows Security auditing, Sysmon, and Splunk Enterprise to investigate endpoint activity.
+- Developed detection logic for suspicious PowerShell execution and process activity.
+- Practiced security event triage and analysis.
+
 ## Lab Environment
 - **Domain:** `skyshield.local`
 - **Domain Controller:** `SKY-SRV-01` (Windows Server)
