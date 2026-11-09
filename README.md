@@ -239,26 +239,30 @@ The following screenshots document selected investigations performed in the lab.
 - [Sysmon Process and Network Monitoring Investigation](documentation/sysmon-investigation.md)
 - [Active Directory Privilege Escalation Investigation](documentation/privilege-escalation-investigation.md) — Investigated privileged group membership changes, developed and tuned a scheduled Splunk alert using Event ID 4728, validated automated detection, and documented remediation.
 
-
 ## Key Takeaways
 
-Through this lab, I practiced:
+Through this lab, I gained hands-on experience with:
 
-- Configuring and verifying Windows Advanced Audit Policy settings.
-- Using Event Viewer to filter and inspect Windows Security events.
-- Investigating failed authentication attempts and interpreting logon types.
-- Enabling process-creation auditing and validating it with Event ID 4688.
-- Correlating Active Directory group-membership events with controlled administrative changes.
-- Distinguishing confirmed evidence from assumptions when investigating security events.
-- Documenting investigation steps, findings, and limitations for technical review.
+- Configuring and verifying Windows Advanced Audit Policy settings to generate security telemetry.
+- Collecting and analyzing Windows Security and Sysmon events using Splunk Enterprise.
+- Developing SPL searches to investigate suspicious authentication, process creation, and privileged account activity.
+- Investigating Windows Security Event IDs 4624, 4625, 4688, 4720, 4728, and 4729.
+- Correlating Active Directory security-group membership changes with controlled administrative actions.
+- Creating and tuning scheduled Splunk alerts to detect Domain Admins membership changes.
+- Validating automated security detections through controlled lab simulations.
+- Investigating security events, evaluating supporting evidence, and documenting remediation procedures.
+- Distinguishing confirmed security findings from assumptions and potential false positives.
+- Documenting SOC investigations, detection logic, screenshots, and technical findings in GitHub.
 
 ## Next Steps
 
 Potential future enhancements include:
 
-- Expanding detection coverage for additional Windows Security and Sysmon event types.
-- Developing additional alerting scenarios for suspicious authentication and account-management activity.
-- Improving dashboard filtering, visualization, and time-range controls.
-- Conducting additional controlled security investigations to validate detection accuracy.
-- Expanding incident response documentation with additional investigation scenarios.
-- Exploring Microsoft Defender security investigation workflows.
+- Expanding detection coverage using additional Windows Security and Sysmon event types.
+- Developing more advanced SPL correlation searches to identify multi-stage attack patterns.
+- Mapping detection rules to the MITRE ATT&CK framework.
+- Improving Splunk dashboard filtering, visualization, and investigation workflows.
+- Conducting additional controlled security simulations to evaluate detection accuracy and false positives.
+- Exploring Microsoft Defender for Endpoint and endpoint detection and response (EDR) investigation workflows.
+- Expanding incident response playbooks to include additional attack scenarios and containment procedures.
+
