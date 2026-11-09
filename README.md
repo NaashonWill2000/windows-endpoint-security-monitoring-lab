@@ -49,14 +49,32 @@ Within this project, **WS01** refers to the Windows 11 lab workstation by its de
 References to WS01 throughout this documentation identify the same endpoint as `DESKTOP-RRPR83H` in Windows Event Viewer, Sysmon, and Splunk search results.
 
 ## Skills Demonstrated
-- Windows Security log analysis
-- Authentication success and failure investigation
-- Process-creation monitoring
-- User-account lifecycle event review
-- Security-group membership change investigation
-- Audit policy configuration and verification
-- Correlating event timestamps and identities with controlled lab activity
-- Documenting findings and distinguishing confirmed evidence from assumptions
+
+### SIEM & Security Monitoring
+- Splunk Enterprise deployment, configuration, and log analysis
+- Search Processing Language (SPL) for security event investigation
+- Windows Security Event Logs and Sysmon telemetry analysis
+- Security dashboard creation and monitoring
+
+### Threat Detection & Detection Engineering
+- Developing and validating custom SPL detection searches
+- Configuring, testing, and tuning scheduled Splunk security alerts
+- Detecting suspicious PowerShell execution and process creation
+- Monitoring authentication failures and privileged group membership changes
+- Investigating Windows Security Event IDs 4624, 4625, 4688, 4720, 4728, and 4729
+
+### Active Directory & Windows Security
+- Active Directory user and security-group administration
+- Privileged account monitoring and access control analysis
+- Windows Advanced Audit Policy configuration and verification
+- Windows endpoint security monitoring and event correlation
+
+### SOC Investigation & Incident Response
+- Investigating suspicious authentication and endpoint activity
+- Correlating security events using timestamps, user identities, and process information
+- Validating security alerts through controlled lab simulations
+- Documenting investigation findings, supporting evidence, and remediation
+- Distinguishing confirmed security events from potential incidents and false positives
 
 ## Event IDs Investigated
 
